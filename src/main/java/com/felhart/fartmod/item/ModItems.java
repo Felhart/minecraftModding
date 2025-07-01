@@ -12,7 +12,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FartMod.MODID);
 
-    public static final RegistryObject<Item> Fart = ITEMS.register("fart",
+    public static final RegistryObject<Item> FART = ITEMS.register("fart",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
