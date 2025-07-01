@@ -1,5 +1,6 @@
 package com.felhart.fartmod;
 
+import com.felhart.fartmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -63,6 +64,7 @@ public class FartMod
     public FartMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -82,7 +84,7 @@ public class FartMod
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-        ModItems.register(modEventBus);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
