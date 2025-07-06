@@ -1,3 +1,6 @@
 {
-  "item.fartmod.fart": "Fart"
+  "item.fartmod.fart": "Fart",
+  "item.fartmod.fart_staff": "Fart Staff",
+
+  "creativetab.fart_tab": "Fart Mod Tab"
 }

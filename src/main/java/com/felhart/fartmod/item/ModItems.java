@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> FART = ITEMS.register("fart",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FART_STAFF = ITEMS.register("fart_staff",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
